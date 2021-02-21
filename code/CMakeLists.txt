@@ -11,4 +11,4 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.h)
 
 add_executable(${PROJECT_NAME} main.cpp ${sources} ${headers})
 
-install(TARGETS exampleB1 DESTINATION bin)
+install(TARGETS SteamGenerator DESTINATION bin)
