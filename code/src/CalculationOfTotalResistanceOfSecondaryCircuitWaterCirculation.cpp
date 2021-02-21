@@ -1,0 +1,9 @@
+#include "CalculationOfTotalResistanceOfSecondaryCircuitWaterCirculation.h"
+
+CalculationOfTotalResistanceOfSecondaryCircuitWaterCirculation::CalculationOfTotalResistanceOfSecondaryCircuitWaterCirculation(/* args */)
+{
+}
+
+CalculationOfTotalResistanceOfSecondaryCircuitWaterCirculation::~CalculationOfTotalResistanceOfSecondaryCircuitWaterCirculation()
+{
+}

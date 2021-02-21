@@ -1,0 +1,11 @@
+#include "CalculationOfTheTotalResistanceOfTheSecondaryCircuitWaterRisingSpace.h"
+
+
+CalculationOfTheTotalResistanceOfTheSecondaryCircuitWaterRisingSpace::CalculationOfTheTotalResistanceOfTheSecondaryCircuitWaterRisingSpace(/* args */)
+{
+}
+
+CalculationOfTheTotalResistanceOfTheSecondaryCircuitWaterRisingSpace::~CalculationOfTheTotalResistanceOfTheSecondaryCircuitWaterRisingSpace()
+{
+}
+

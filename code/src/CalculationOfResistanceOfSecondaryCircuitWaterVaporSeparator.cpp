@@ -1,0 +1,10 @@
+#include "CalculationOfResistanceOfSecondaryCircuitWaterVaporSeparator.h"
+
+
+CalculationOfResistanceOfSecondaryCircuitWaterVaporSeparator::CalculationOfResistanceOfSecondaryCircuitWaterVaporSeparator(/* args */)
+{
+}
+
+CalculationOfResistanceOfSecondaryCircuitWaterVaporSeparator::~CalculationOfResistanceOfSecondaryCircuitWaterVaporSeparator()
+{
+}

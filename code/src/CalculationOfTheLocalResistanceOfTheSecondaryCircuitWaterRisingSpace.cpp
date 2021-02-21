@@ -1,0 +1,9 @@
+#include "CalculationOfTheLocalResistanceOfTheSecondaryCircuitWaterRisingSpace.h"
+
+CalculationOfTheLocalResistanceOfTheSecondaryCircuitWaterRisingSpace::CalculationOfTheLocalResistanceOfTheSecondaryCircuitWaterRisingSpace(/* args */)
+{
+}
+
+CalculationOfTheLocalResistanceOfTheSecondaryCircuitWaterRisingSpace::~CalculationOfTheLocalResistanceOfTheSecondaryCircuitWaterRisingSpace()
+{
+}

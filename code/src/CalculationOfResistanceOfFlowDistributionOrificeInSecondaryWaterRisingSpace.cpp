@@ -1,0 +1,9 @@
+#include "CalculationOfResistanceOfFlowDistributionOrificeInSecondaryWaterRisingSpace.h"
+
+CalculationOfResistanceOfFlowDistributionOrificeInSecondaryWaterRisingSpace::CalculationOfResistanceOfFlowDistributionOrificeInSecondaryWaterRisingSpace(/* args */)
+{
+}
+
+CalculationOfResistanceOfFlowDistributionOrificeInSecondaryWaterRisingSpace::~CalculationOfResistanceOfFlowDistributionOrificeInSecondaryWaterRisingSpace()
+{
+}
