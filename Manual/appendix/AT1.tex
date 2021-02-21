@@ -4,26 +4,26 @@
     \scalebox{1.4}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目             & 符号           & 单位      & 公式及来源                                                                                     & 数值 \\ \hline
-            1    & 一回路放热量     & $ Q $          & $ kW $    & 给定                                                                                           &      \\ \hline
-            2    & 一回路工作压力   & $ p_1 $        & $ Pa $    & 给定                                                                                           &      \\ \hline
-            3    & 一回路水进口温度 & $ t_{1}^{'} $  & $ ^oC $   & 给定                                                                                           &      \\ \hline
-            4    & 一回路水出口温度 & $ t_{1}^{''} $ & $ ^oC $   & 给定                                                                                           &      \\ \hline
-            5    & 一回路水平均温度 & $ t_a $        & $ ^oC $   & $ \frac{1}{2} (t_{1}^{'} + t_{1}^{''}) $                                                       &      \\ \hline
-            6    & 一回路水进口焓   & $ i_{1}^{'} $  & $ kJ/kg $ & 查表                                                                                           &      \\ \hline
-            7    & 一回路水出口焓   & $ i_{1}^{''} $ & $ kJ/kg $ & 查表                                                                                           &      \\ \hline
-            8    & 蒸发器热效率     & $ \eta  $      &           & 给定                                                                                           &      \\ \hline
-            9    & 一回路水流量     & $ G_1 $        & $ kg/s $  & $ \mathrm{Q} / \eta \cdot\left(\mathrm{i}_{1}^{\prime}-\mathrm{i}_{1}^{\prime \prime}\right) $ &      \\ \hline
-            10   & 二回路工作压力   & $ p_s $        & $ Pa $    & 给定                                                                                           &      \\ \hline
-            11   & 二回路饱和温度   & $ t_s $        & $ ^oC $   & 查表                                                                                           &      \\ \hline
-            12   & 二回路水饱和焓   & $ i_s $        & $ kJ/kg $ & 查表                                                                                           &      \\ \hline
-            13   & 二回路给水温度   & $ t_f $        & $ ^oC $   & 给定                                                                                           &      \\ \hline
-            14   & 二回路给水焓     & $ i_f $        & $ kJ/kg $ & 查表                                                                                           &      \\ \hline
-            15   & 汽化潜热         & $ r $          & $ kJ/kg $ & 查表                                                                                           &      \\ \hline
-            16   & 蒸汽干度         & $ x $          &           & 给定                                                                                           &      \\ \hline
-            17   & 排放系数         & $ C_s $        &           & 给定                                                                                           &      \\ \hline
-            18   & 二回路蒸汽产量   & $ D $          & $ kg/s $  & $ \frac{Q}{r x+1.01\left(i_{s}-i_{f}\right)} $                                                 &      \\ \hline
-            19   & 二回路排污量     & $ D_{bd} $     & $ kg/s $  & $ C_s D $                                                                                      &      \\ \hline
+            序号 & 项目             & 符号           & 单位      & 公式及来源                                                                                     & 数值    \\ \hline
+            1    & 一回路放热量     & $ Q $          & $ kW $    & 给定                                                                                           & 2312.11 \\ \hline
+            2    & 一回路工作压力   & $ p_1 $        & $ Pa $    & 给定                                                                                           & 15.0    \\ \hline
+            3    & 一回路水进口温度 & $ t_{1}^{'} $  & $ ^oC $   & 给定                                                                                           & 310     \\ \hline
+            4    & 一回路水出口温度 & $ t_{1}^{''} $ & $ ^oC $   & 给定                                                                                           & 290     \\ \hline
+            5    & 一回路水平均温度 & $ t_a $        & $ ^oC $   & $ \frac{1}{2} (t_{1}^{'} + t_{1}^{''}) $                                                       & 300     \\ \hline
+            6    & 一回路水进口焓   & $ i_{1}^{'} $  & $ kJ/kg $ & 查表                                                                                           & 1369.04 \\ \hline
+            7    & 一回路水出口焓   & $ i_{1}^{''} $ & $ kJ/kg $ & 查表                                                                                           & 1285.82 \\ \hline
+            8    & 蒸发器热效率     & $ \eta  $      &           & 给定                                                                                           & 0.99    \\ \hline
+            9    & 一回路水流量     & $ G_1 $        & $ kg/s $  & $ \mathrm{Q} / \eta \cdot\left(\mathrm{i}_{1}^{\prime}-\mathrm{i}_{1}^{\prime \prime}\right) $ & 2118.94 \\ \hline
+            10   & 二回路工作压力   & $ p_s $        & $ Pa $    & 给定                                                                                           & 5       \\ \hline
+            11   & 二回路饱和温度   & $ t_s $        & $ ^oC $   & 查表                                                                                           & 264.0   \\ \hline
+            12   & 二回路水饱和焓   & $ i_s $        & $ kJ/kg $ & 查表                                                                                           & 1155.14 \\ \hline
+            13   & 二回路给水温度   & $ t_f $        & $ ^oC $   & 给定                                                                                           & 220     \\ \hline
+            14   & 二回路给水焓     & $ i_f $        & $ kJ/kg $ & 查表                                                                                           & 944.88  \\ \hline
+            15   & 汽化潜热         & $ r $          & $ kJ/kg $ & 查表                                                                                           & 1639.04 \\ \hline
+            16   & 蒸汽干度         & $ x $          &           & 给定                                                                                           & 0.99    \\ \hline
+            17   & 排放系数         & $ C_s $        &           & 给定                                                                                           & 0.01    \\ \hline
+            18   & 二回路蒸汽产量   & $ D $          & $ kg/s $  & $ \frac{Q}{r x+1.01\left(i_{s}-i_{f}\right)} $                                                 & 126     \\ \hline
+            19   & 二回路排污量     & $ D_{bd} $     & $ kg/s $  & $ C_s D $                                                                                      & 1.26    \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -35,31 +35,31 @@
     \scalebox{1.1}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目             & 符号                & 单位      & 公式及来源                                                                                         & 数值 \\ \hline
-            20   & 传热管外径       & $ d_o $             & $ kW $    & 选定                                                                                               &      \\ \hline
-            21   & 传热管内径       & $ d_i $             & $ Pa $    & 选定                                                                                               &      \\ \hline
-            22   & 单管流通面积     & $ a $               & $ ^oC $   & $ \frac{1}{4} \pi d_{i}^{2} $                                                                      &      \\ \hline
-            23   & U 型管数目       & $ n $               & $ ^oC $   & 结构设计定                                                                                         &      \\ \hline
-            24   & 一回路流通面积   & $ A $               & $ ^oC $   & $ n \cdot a $                                                                                      &      \\ \hline
-            25   & 一回路水平均比容 & $ \overline{v_1}  $ & $ kJ/kg $ & 查表                                                                                               &      \\ \hline
-            26   & 一回路水流速     & $ u_1 $             & $ kJ/kg $ & $ G_1 \overline{v_1} / A $                                                                         &      \\ \hline
-            27   & 一回路水导热系数 & $ \lambda_1  $      &           & 查表                                                                                               &      \\ \hline
-            28   & 一回路水动力粘度 & $ \eta_1 $          & $ kg/s $  & 查表                                                                                               &      \\ \hline
-            29   & 一回路水普朗特数 & $ Pr_f $            & $ Pa $    & 查表                                                                                               &      \\ \hline
-            30   & 一回路水雷诺数   & $ Re_f $            & $ ^oC $   & $ \mathrm{u}_{1} \mathrm{~d}_{\mathrm{i}} / \eta_{1} \bar{v}_{1} $                                 &      \\ \hline
-            31   & 一回路侧放热系数 & $ \alpha_1 $        & $ kJ/kg $ & $ 0.023 \frac{\lambda_{1}}{d_{i}} \operatorname{Re}_{f}^{0.8} \operatorname{Pr}_{f}^{0.4} $        &      \\ \hline
-            32   & 传热管导热系数   & $ \lambda_w $       & $ ^oC $   & 给定                                                                                               &      \\ \hline
-            33   & 传热管壁热阻     & $ R_w $             & $ kJ/kg $ & $ R_{W}=\frac{d_{o}}{2 \lambda_{w}} \ln \frac{d_{o}}{d_{i}} $                                      &      \\ \hline
-            34   & 污垢热阻         & $ R_f $             & $ kJ/kg $ & 按Inconel—600 选定                                                                                 &      \\ \hline
-            35   & 二回路侧放热系数 & $ \alpha_2 $        &           & $ \alpha_{2}=0.557 p_{s}^{0.15} q^{0.7} $                                                          &      \\ \hline
-            36   & 传热系数         & $ k $               &           & $ \frac{1}{k}=\frac{d_{o}}{d_{i}} \cdot \frac{1}{\alpha_{i}}+R_{w}+\frac{1}{\alpha_{0}}+R_{f} $    &      \\ \hline
-            37   & 大端温差         & $ \Delta t_{max} $  & $ kg/s $  & $ t_{1}^{'} - T_s $                                                                                &      \\ \hline
-            38   & 小端温差         & $ \Delta t_{min} $  & $ kg/s $  & $ t_{1}^{''} - T_s $                                                                               &      \\ \hline
-            39   & 对数平均温差     & $ \Delta t_{ln} $   &           & $ \frac{\Delta t_{\max }-\Delta t_{\min }}{\ln \left(\Delta t_{\max } / \Delta t_{\min }\right)} $ &      \\ \hline
-            40   & 热负荷           & $ q $               &           & $ q \cdot \Delta t_{in}$                                                                           &      \\ \hline
-            41   & 计算传热面积     & $ F $               &           & $ Q/(10^{-3}q) $                                                                                   &      \\ \hline
-            42   & 传热裕度系数     &                     &           & 选定                                                                                               &      \\ \hline
-            43   & 设计传热面积     & $ F_{\text{设}} $   & $ m^2 $   & $ C \cdot F $                                                                                      &      \\ \hline
+            序号 & 项目             & 符号                & 单位      & 公式及来源                                                                                         & 数值  \\ \hline
+            20   & 传热管外径       & $ d_o $             & $ kW $    & 选定                                                                                               & 0.022 \\ \hline
+            21   & 传热管内径       & $ d_i $             & $ Pa $    & 选定                                                                                               &       \\ \hline
+            22   & 单管流通面积     & $ a $               & $ ^oC $   & $ \frac{1}{4} \pi d_{i}^{2} $                                                                      &       \\ \hline
+            23   & U 型管数目       & $ n $               & $ ^oC $   & 结构设计定                                                                                         &       \\ \hline
+            24   & 一回路流通面积   & $ A $               & $ ^oC $   & $ n \cdot a $                                                                                      &       \\ \hline
+            25   & 一回路水平均比容 & $ \overline{v_1}  $ & $ kJ/kg $ & 查表                                                                                               &       \\ \hline
+            26   & 一回路水流速     & $ u_1 $             & $ kJ/kg $ & $ G_1 \overline{v_1} / A $                                                                         &       \\ \hline
+            27   & 一回路水导热系数 & $ \lambda_1  $      &           & 查表                                                                                               &       \\ \hline
+            28   & 一回路水动力粘度 & $ \eta_1 $          & $ kg/s $  & 查表                                                                                               &       \\ \hline
+            29   & 一回路水普朗特数 & $ Pr_f $            & $ Pa $    & 查表                                                                                               &       \\ \hline
+            30   & 一回路水雷诺数   & $ Re_f $            & $ ^oC $   & $ \mathrm{u}_{1} \mathrm{~d}_{\mathrm{i}} / \eta_{1} \bar{v}_{1} $                                 &       \\ \hline
+            31   & 一回路侧放热系数 & $ \alpha_1 $        & $ kJ/kg $ & $ 0.023 \frac{\lambda_{1}}{d_{i}} \operatorname{Re}_{f}^{0.8} \operatorname{Pr}_{f}^{0.4} $        &       \\ \hline
+            32   & 传热管导热系数   & $ \lambda_w $       & $ ^oC $   & 给定                                                                                               &       \\ \hline
+            33   & 传热管壁热阻     & $ R_w $             & $ kJ/kg $ & $ R_{W}=\frac{d_{o}}{2 \lambda_{w}} \ln \frac{d_{o}}{d_{i}} $                                      &       \\ \hline
+            34   & 污垢热阻         & $ R_f $             & $ kJ/kg $ & 按Inconel—600 选定                                                                                 &       \\ \hline
+            35   & 二回路侧放热系数 & $ \alpha_2 $        &           & $ \alpha_{2}=0.557 p_{s}^{0.15} q^{0.7} $                                                          &       \\ \hline
+            36   & 传热系数         & $ k $               &           & $ \frac{1}{k}=\frac{d_{o}}{d_{i}} \cdot \frac{1}{\alpha_{i}}+R_{w}+\frac{1}{\alpha_{0}}+R_{f} $    &       \\ \hline
+            37   & 大端温差         & $ \Delta t_{max} $  & $ kg/s $  & $ t_{1}^{'} - T_s $                                                                                &       \\ \hline
+            38   & 小端温差         & $ \Delta t_{min} $  & $ kg/s $  & $ t_{1}^{''} - T_s $                                                                               &       \\ \hline
+            39   & 对数平均温差     & $ \Delta t_{ln} $   &           & $ \frac{\Delta t_{\max }-\Delta t_{\min }}{\ln \left(\Delta t_{\max } / \Delta t_{\min }\right)} $ &       \\ \hline
+            40   & 热负荷           & $ q $               &           & $ q \cdot \Delta t_{in}$                                                                           &       \\ \hline
+            41   & 计算传热面积     & $ F $               &           & $ Q/(10^{-3}q) $                                                                                   &       \\ \hline
+            42   & 传热裕度系数     &                     &           & 选定                                                                                               &       \\ \hline
+            43   & 设计传热面积     & $ F_{\text{设}} $   & $ m^2 $   & $ C \cdot F $                                                                                      &       \\ \hline
         \end{tabular}
     }
 \end{table}
