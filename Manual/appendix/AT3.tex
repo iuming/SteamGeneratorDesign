@@ -1,0 +1,97 @@
+\subsection{传热管}
+
+\begin{table}[H]
+    \centering
+    \caption{传热管}
+    \scalebox{1.25}{
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            序号 & 项目           & 符号               & 单位          & 公式及来源                                                                  & 数值 \\ \hline
+            1    & 设计压力       & $ P_{\text{设}1} $ & $ kg/cm^{2} $ & 选定                                                                        &      \\ \hline
+            2    & 许用应力       & $ [\sigma] $       & $ kg/mm^{2} $ & 查表                                                                        &      \\ \hline
+            3    & 管子外径       & $ d_o $            & $ mm $        & 选定                                                                        &      \\ \hline
+            4    & 直管计算壁厚   & $ S^{''} $         & $ mm $        & $ \frac{P_{\text {设 } 1} \cdot d_{o}}{200[\sigma]+0.8 P_{\text {设 } 1}} $ &      \\ \hline
+            5    & 负公差修正系数 & $ \phi $           &               & 技术条件测定                                                                &      \\ \hline
+            6    & 弯曲减薄系数   & $ \Phi_R $         &               & $ 1 + d_o / 4R $                                                            &      \\ \hline
+            7    & 计算壁厚       & $ S^{'} $          & $ mm $        & $ S^{''} \cdot \phi \cdot \phi_R $                                          &      \\ \hline
+            8    & 设计壁厚       & $ S $              & $ mm $        & 选取                                                                        &      \\ \hline
+        \end{tabular}
+    }
+\end{table}
+
+\subsection{下筒体}
+
+\begin{table}[H]
+    \centering
+    \caption{下筒体}
+    \scalebox{1.25}{
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            序号 & 项目           & 符号                & 单位          & 公式及来源                                                                     & 数值 \\ \hline
+            1    & 设计压力       & $ P_{\text{设},2} $ & $ kg/cm^{2} $ & 选定                                                                           &      \\ \hline
+            2    & 许用应力       & $ [\sigma] $        & $ kg/mm^{2} $ & 查表                                                                           &      \\ \hline
+            3    & 筒体内径       & $ D_{i,\text{下}} $ & $ mm $        & 结构设计定                                                                     &      \\ \hline
+            4    & 设计壁厚       & $ S^{'} $           & $ mm $        & $ \frac{P_{\text {设 } 2} \cdot D_{i 下}}{200[\sigma]-1.2 P_{\text {设 } 2}} $ &      \\ \hline
+            5    & 设计壁厚       & $ S $               & $ mm $        & 选定                                                                           &      \\ \hline
+            6    & 筒体外径       & $ D_{o,\text{下}} $ & $ mm $        & $ D_{i,\text{下}} + 2S $                                                       &      \\ \hline
+            7    & 与管板连接壁厚 & $ S_{I} $           & $ mm $        & 选定                                                                           &      \\ \hline
+        \end{tabular}
+    }
+\end{table}
+
+\subsection{上筒体}
+
+\begin{table}[H]
+    \centering
+    \caption{上筒体}
+    \scalebox{1.25}{
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            序号 & 项目     & 符号                & 单位          & 公式及来源                                                                            & 数值 \\ \hline
+            1    & 设计压力 & $ P_{\text{设},2} $ & $ kg/cm^{2} $ & 选定                                                                                  &      \\ \hline
+            2    & 许用应力 & $ [\sigma] $        & $ kg/mm^{2} $ & 查表                                                                                  &      \\ \hline
+            3    & 筒体内径 & $ D_{i,\text{下}} $ & $ mm $        & 结构设计定                                                                            &      \\ \hline
+            4    & 设计壁厚 & $ S^{'} $           & $ mm $        & $ \frac{P_{\text {设 } 2} \cdot D_{i \text{上}}}{200[\sigma]-1.2 P_{\text {设 } 2}} $ &      \\ \hline
+            5    & 设计壁厚 & $ S $               & $ mm $        & 选定                                                                                  &      \\ \hline
+        \end{tabular}
+    }
+\end{table}
+
+\subsection{球形下封头}
+
+\begin{table}[H]
+    \centering
+    \caption{球形下封头}
+    \scalebox{1.25}{
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            序号 & 项目         & 符号                & 单位          & 公式及来源                                                                    & 数值 \\ \hline
+            1    & 设计压力     & $ P_{\text{设},1} $ & $ kg/cm^{2} $ & 选定                                                                          &      \\ \hline
+            2    & 许用应力     & $ [\sigma] $        & $ kg/mm^{2} $ & 查表                                                                          &      \\ \hline
+            3    & 球形封头外径 & $ D_o $             & $ mm $        & 结构设计定                                                                    &      \\ \hline
+            4    & 计算壁厚     & $ S^{'} $           & $ mm $        & $ \frac{P_{\text {设 } 1} \cdot D_{0}}{400[\sigma] + 1.6 P_{\text {设 } 1}} $ &      \\ \hline
+            5    & 设计壁厚     & $ S $               & $ mm $        & 选取                                                                          &      \\ \hline
+        \end{tabular}
+    }
+\end{table}
+
+\subsection{管板}
+
+\begin{table}[H]
+    \centering
+    \caption{管板}
+    \scalebox{1.1}{
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            序号 & 项目                 & 符号                & 单位          & 公式及来源                                       & 数值 \\ \hline
+            1    & 设计压力             & $ P_{\text{设},2} $ & $ kg/cm^{2} $ & 选定                                             &      \\ \hline
+            2    & 许用应力             & $ [\sigma] $        & $ kg/mm^{2} $ & 查表                                             &      \\ \hline
+            3    & 承压部分直径         & $ D $               & $ mm $        & 结构设计定                                       &      \\ \hline
+            4    & 筒体根部壁厚与直径比 &                     &               & $ S/D $                                          &      \\ \hline
+            5    & 系 数                & $ F $               &               & 查TEMA 标准                                      &      \\ \hline
+            6    & 计算壁厚             & $ S^{'} $           & $ mm $        & $ \frac{1}{2} FD \sqrt{P_{\text{设}}/[\sigma]} $ &      \\ \hline
+            7    & 设计壁厚             & $ S $               & $ mm $        & 选取                                             &      \\ \hline
+            8    & 堆焊层厚度           & $ S^{'} $           & $ mm $        & 选取                                             &      \\ \hline
+        \end{tabular}
+    }
+\end{table}
