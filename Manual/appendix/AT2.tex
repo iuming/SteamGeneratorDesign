@@ -6,19 +6,19 @@
     \scalebox{1.3}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目               & 符号               & 单位                                           & 公式及来源                                                                                       & 数值 \\ \hline
-            1    & 传热管实际平均长度 & $ l $              & $ m $                                          & 结构设计                                                                                         &      \\ \hline
-            2    & 当量直径           & $ d_i $            & $ m $                                          & 结构设计                                                                                         &      \\ \hline
-            3    & 一回路水流量       & $ G_1 $            & $ kg/s $                                       & 热工计算定                                                                                       &      \\ \hline
-            4    & 一回路水平均比容   & $ \overline{v_1} $ & $ m^3/kg $                                     & 查 表                                                                                            &      \\ \hline
-            5    & 一回路水流速       & $ u_1 $            & $ m/s $                                        & 热工计算定                                                                                       &      \\ \hline
-            6    & 考虑堵管后流速     & $ u_{1}^{'} $      & $ m/s $                                        & $ 1.05u_1 $                                                                                      &      \\ \hline
-            7    & 一回路水雷诺数     & $ Re $             & $ \frac{u_{1}^{'}d_i}{\eta_1 \overline{v_1}} $ & 热工计算定                                                                                       &      \\ \hline
-            8    & 摩擦阻力系数       & $ \lambda $        &                                                & $ 0.3164Re^{-0.25} $                                                                             &      \\ \hline
-            9    & 平均温度下动力粘度 & $ \eta_{1} $       & $ kg/m \cdot s $                               & 查 表                                                                                            &      \\ \hline
-            10   & 壁温下动力粘度     & $ \eta_{1}^{'} $   & $ kg/m \cdot s $                               & 按$ \frac{1}{2}(t_a + t_s) $查表                                                                 &      \\ \hline
-            11   & 温度修正系数       & $ \varphi $        &                                                & $ \left(\eta_{1} / \eta_{1}^{\prime}\right)^{0.14} $                                             &      \\ \hline
-            12   & 摩擦阻力           & $ \Delta P_f $     & $ Pa $                                         & $ \lambda \cdot \frac{H_{\text {直 }}}{d e} \cdot \frac{u_{1}^{\prime 2}}{\varphi \bar{v}_{1}} $ &      \\ \hline
+            序号 & 项目               & 符号               & 单位                                           & 公式及来源                                                                                       & 数值             \\ \hline
+            1    & 传热管实际平均长度 & $ l $              & $ m $                                          & 结构设计                                                                                         & 11.38            \\ \hline
+            2    & 当量直径           & $ d_i $            & $ m $                                          & 结构设计                                                                                         & 0.0193           \\ \hline
+            3    & 一回路水流量       & $ G_1 $            & $ kg/s $                                       & 热工计算定                                                                                       & 2118.94          \\ \hline
+            4    & 一回路水平均比容   & $ \overline{v_1} $ & $ m^3/kg $                                     & 查 表                                                                                            & $ 1.38*10^{-3} $ \\ \hline
+            5    & 一回路水流速       & $ u_1 $            & $ m/s $                                        & 热工计算定                                                                                       & 5.86             \\ \hline
+            6    & 考虑堵管后流速     & $ u_{1}^{'} $      & $ m/s $                                        & $ 1.05u_1 $                                                                                      & 6.153            \\ \hline
+            7    & 一回路水雷诺数     & $ Re $             & $ \frac{u_{1}^{'}d_i}{\eta_1 \overline{v_1}} $ & 热工计算定                                                                                       & $ 9.85*10^{-5} $ \\ \hline
+            8    & 摩擦阻力系数       & $ \lambda $        &                                                & $ 0.3164Re^{-0.25} $                                                                             & 0.01             \\ \hline
+            9    & 平均温度下动力粘度 & $ \eta_{1} $       & $ kg/m \cdot s $                               & 查 表                                                                                            & $ 8.83*10^{-5} $ \\ \hline
+            10   & 壁温下动力粘度     & $ \eta_{1}^{'} $   & $ kg/m \cdot s $                               & 按$ \frac{1}{2}(t_a + t_s) $查表                                                                 & $ 9.26*10^{-5} $ \\ \hline
+            11   & 温度修正系数       & $ \varphi $        &                                                & $ \left(\eta_{1} / \eta_{1}^{\prime}\right)^{0.14} $                                             & 0.9934           \\ \hline
+            12   & 摩擦阻力           & $ \Delta P_f $     & $ Pa $                                         & $ \lambda \cdot \frac{H_{\text {直 }}}{d e} \cdot \frac{u_{1}^{\prime 2}}{\varphi \bar{v}_{1}} $ & 73346.9          \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -30,35 +30,35 @@
     \scalebox{1.1}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目                & 符号           & 单位       & 公式及来源                                               & 数值 \\ \hline
-            13   & 下封头内径          & $ D_1 $        & $ m $      & 结构设计定                                               &      \\ \hline
-            14   & 水室截面积          & $ F_c $        & $ m^2 $    & $ \frac{\pi}{8}D_{1}^{2} $                               &      \\ \hline
-            15   & 进口管内径          & $ d_{1i} $     & $ m $      & 选定                                                     &      \\ \hline
-            16   & 进口管截面积        & $ A_1 $        & $ m^2 $    & $ \frac{\pi}{4} \cdot d_{1i}^{2} $                       &      \\ \hline
-            17   & 比 值               &                &            & $ A_1/F_c $                                              &      \\ \hline
-            18   & 突扩阻力系数        & $ \xi_1 $      &            & 查表                                                     &      \\ \hline
-            19   & 一回路水入口处比容  & $ v_{1i} $     & $ m^3/kg $ & 查表                                                     &      \\ \hline
-            20   & 一回路水入口处密度  & $ \rho_{1i} $  & $ kg/m^3 $ & $ 1/v_{1i} $                                             &      \\ \hline
-            21   & 入口管内流速        & $ u_{1i} $     & $ m/s $    & 热工计算定                                               &      \\ \hline
-            22   & 从入口管至水室阻力  & $ \Delta P_1 $ & $ Pa $     & $ \xi_{1} \cdot \frac{u_{1 i}^{2} \cdot \rho_{1 i}}{2} $ &      \\ \hline
-            23   & 水室转弯45°阻力系数 & $ \xi_2 $      &            & 查表                                                     &      \\ \hline
-            24   & 水室转弯45°阻力     & $ \Delta P_2 $ & $ Pa $     & $ \xi_{2} \cdot \frac{u_{1 i}^{2} \cdot \rho_{1 i}}{2} $ &      \\ \hline
-            25   & 传热管流道截面      & $ A $          & $ m^2 $    & 热工计算定                                               &      \\ \hline
-            26   & 考虑有堵管后截面    & $ A^{'} $      & $ m^2 $    & $ A/1.05 $                                               &      \\ \hline
-            27   & 系 数               &                &            & $ A^{'}/F_{c} $                                          &      \\ \hline
-            28   & 传热管入口阻力系数  & $ \xi_3 $      &            & 查表                                                     &      \\ \hline
-            29   & 传热管入口阻力      & $ \Delta P_3 $ & $ Pa $     & $ \xi_{3} \cdot \frac{u_{1 i}^{2} \cdot \rho_{1 i}}{2} $ &      \\ \hline
-            30   & U型管转180°阻力系数 & $ \xi_4 $      &            & 查表                                                     &      \\ \hline
-            31   & U 型管转180°阻力    & $ \Delta P_4 $ & $ Pa $     & $ \xi_{4} \cdot \frac{u_{1 i}^{2} \cdot \rho_{1 }}{2} $  &      \\ \hline
-            32   & 传热管出口阻力系数  & $ \xi_5 $      &            & 查表                                                     &      \\ \hline
-            33   & 出口处水比容        & $ v_2 $        & $ m^3/kg $ & 查表                                                     &      \\ \hline
-            34   & 出口处水密度        & $ \rho_2 $     & $ kg/m^3 $ & $ 1/v_2 $                                                &      \\ \hline
-            35   & 传热管出口阻力      & $ \Delta P_5 $ & $ Pa $     & $ \xi_{5} \cdot \frac{u_{1 i}^{2} \cdot \rho_{2 }}{2} $  &      \\ \hline
-            36   & 出口管内流速        & $ u_2 $        & $ m/s $    & $ G_1v_2/A_1 $                                           &      \\ \hline
-            37   & 水室转弯阻力系数    & $ \xi_6 $      &            & 查表                                                     &      \\ \hline
-            38   & 水室转弯阻力        & $ \Delta P_6 $ & $ Pa $     & $ \xi_6 \cdot \frac{u_2 \rho_2}{2} $                     &      \\ \hline
-            39   & 出口管突缩阻力系数  & $ \xi_7 $      &            & 查表                                                     &      \\ \hline
-            40   & 出口管突缩阻力      & $ \Delta P_7 $ & $ Pa $     & $ \xi_7 \cdot \frac{u_{2}^{2} \rho_2}{2} $               &      \\ \hline
+            序号 & 项目                & 符号           & 单位       & 公式及来源                                               & 数值    \\ \hline
+            13   & 下封头内径          & $ D_1 $        & $ m $      & 结构设计定                                               & 2.26    \\ \hline
+            14   & 水室截面积          & $ F_c $        & $ m^2 $    & $ \frac{\pi}{8}D_{1}^{2} $                               & 2       \\ \hline
+            15   & 进口管内径          & $ d_{1i} $     & $ m $      & 选定                                                     & 0.62    \\ \hline
+            16   & 进口管截面积        & $ A_1 $        & $ m^2 $    & $ \frac{\pi}{4} \cdot d_{1i}^{2} $                       & 0.3     \\ \hline
+            17   & 比 值               &                &            & $ A_1/F_c $                                              & 0.15    \\ \hline
+            18   & 突扩阻力系数        & $ \xi_1 $      &            & 查表                                                     & 0.7     \\ \hline
+            19   & 一回路水入口处比容  & $ v_{1i} $     & $ m^3/kg $ & 查表                                                     & 0.00142 \\ \hline
+            20   & 一回路水入口处密度  & $ \rho_{1i} $  & $ kg/m^3 $ & $ 1/v_{1i} $                                             & 703.63  \\ \hline
+            21   & 入口管内流速        & $ u_{1i} $     & $ m/s $    & 热工计算定                                               & 9.75    \\ \hline
+            22   & 从入口管至水室阻力  & $ \Delta P_1 $ & $ Pa $     & $ \xi_{1} \cdot \frac{u_{1 i}^{2} \cdot \rho_{1 i}}{2} $ & 23411   \\ \hline
+            23   & 水室转弯45°阻力系数 & $ \xi_2 $      &            & 查表                                                     & 0.9     \\ \hline
+            24   & 水室转弯45°阻力     & $ \Delta P_2 $ & $ Pa $     & $ \xi_{2} \cdot \frac{u_{1 i}^{2} \cdot \rho_{1 i}}{2} $ & 9323.7  \\ \hline
+            25   & 传热管流道截面      & $ A $          & $ m^2 $    & 热工计算定                                               & 0.498   \\ \hline
+            26   & 考虑有堵管后截面    & $ A^{'} $      & $ m^2 $    & $ A/1.05 $                                               & 0.474   \\ \hline
+            27   & 系 数               &                &            & $ A^{'}/F_{c} $                                          & 0.237   \\ \hline
+            28   & 传热管入口阻力系数  & $ \xi_3 $      &            & 查表                                                     & 0.5     \\ \hline
+            29   & 传热管入口阻力      & $ \Delta P_3 $ & $ Pa $     & $ \xi_{3} \cdot \frac{u_{1 i}^{2} \cdot \rho_{1 i}}{2} $ & 6659.7  \\ \hline
+            30   & U型管转180°阻力系数 & $ \xi_4 $      &            & 查表                                                     & 0.5     \\ \hline
+            31   & U 型管转180°阻力    & $ \Delta P_4 $ & $ Pa $     & $ \xi_{4} \cdot \frac{u_{1 i}^{2} \cdot \rho_{1 }}{2} $  & 7057.8  \\ \hline
+            32   & 传热管出口阻力系数  & $ \xi_5 $      &            & 查表                                                     & 0.6     \\ \hline
+            33   & 出口处水比容        & $ v_2 $        & $ m^3/kg $ & 查表                                                     & 0.00134 \\ \hline
+            34   & 出口处水密度        & $ \rho_2 $     & $ kg/m^3 $ & $ 1/v_2 $                                                & 745.68  \\ \hline
+            35   & 传热管出口阻力      & $ \Delta P_5 $ & $ Pa $     & $ \xi_{5} \cdot \frac{u_{1 i}^{2} \cdot \rho_{2 }}{2} $  & 8469.3  \\ \hline
+            36   & 出口管内流速        & $ u_2 $        & $ m/s $    & $ G_1v_2/A_1 $                                           & 9.75    \\ \hline
+            37   & 水室转弯阻力系数    & $ \xi_6 $      &            & 查表                                                     & 0.9     \\ \hline
+            38   & 水室转弯阻力        & $ \Delta P_6 $ & $ Pa $     & $ \xi_6 \cdot \frac{u_2 \rho_2}{2} $                     & 29966   \\ \hline
+            39   & 出口管突缩阻力系数  & $ \xi_7 $      &            & 查表                                                     & 0.44    \\ \hline
+            40   & 出口管突缩阻力      & $ \Delta P_7 $ & $ Pa $     & $ \xi_7 \cdot \frac{u_{2}^{2} \rho_2}{2} $               & 15595   \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -69,9 +69,9 @@
     \scalebox{1.1}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目     & 符号                     & 单位   & 公式及来源                                   & 数值 \\ \hline
-            41   & 总阻力   & $ \Delta P $             & $ Pa $ & $ \Delta P_{f}+\sum_{i=1}^{7} \Delta P_{i} $ &      \\ \hline
-            42   & 设计阻力 & $ \Delta P_{\text{设}} $ & $ Pa $ & $ 1.1 \Delta P $                             &      \\ \hline
+            序号 & 项目     & 符号                     & 单位   & 公式及来源                                   & 数值     \\ \hline
+            41   & 总阻力   & $ \Delta P $             & $ Pa $ & $ \Delta P_{f}+\sum_{i=1}^{7} \Delta P_{i} $ & 194607.7 \\ \hline
+            42   & 设计阻力 & $ \Delta P_{\text{设}} $ & $ Pa $ & $ 1.1 \Delta P $                             & 214068   \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -85,24 +85,24 @@
     \scalebox{1.3}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目             & 符号           & 单位       & 公式及来源                                                            & 数值 \\ \hline
-            1    & 循环倍率         & $ C_R $        &            & 假定                                                                  &      \\ \hline
-            2    & 给水温度         & $ t_f $        & $ ^oC $    & 给定                                                                  &      \\ \hline
-            3    & 二回路饱和温度   & $ t_s $        & $ ^oC $    & 查表                                                                  &      \\ \hline
-            4    & 下降空间水比容   & $ v_d $        & $ m^3/kg $ & 近似取饱和比容                                                        &      \\ \hline
-            5    & 下降空间水密度   & $ \rho_d $     & $ kg/m^3 $ & $ \frac{1}{v_d} $                                                     &      \\ \hline
-            6    & 入口阻力系数     & $ \xi_{in} $   &            & 选取                                                                  &      \\ \hline
-            7    & 出口阻力系数     & $ \xi_{out} $  &            & 选取                                                                  &      \\ \hline
-            8    & 定位装置阻力系数 & $ \xi_f $      &            & 选取                                                                  &      \\ \hline
-            9    & 下降空间高度     & $ H_0 $        & $ m $      & 结构设计定                                                            &      \\ \hline
-            10   & 套筒外径         & $ D_{w0} $     & $ m $      & 结构设计定                                                            &      \\ \hline
-            11   & 下筒体内径       & $ D_{si} $     & $ m $      & 结构设计定                                                            &      \\ \hline
-            12   & 下降空间当量直径 & $ D_{si} $     & $ m $      & $ D_{si} - D_{wo} $                                                   &      \\ \hline
-            13   & 绝对粗糙度       & $ \Delta $     & $ m $      & 选定                                                                  &      \\ \hline
-            14   & 摩擦系数         & $ \lambda_d $  &            & $ \frac{1}{(1.74+21g \frac{De}{2 \Delta})^2} $                        &      \\ \hline
-            15   & 下降空间截面积   & $ F_d $        & $ m^2 $    & $ \frac{\pi}{4}(D_{si}^{2}-D_{wo}^{2}) $                              &      \\ \hline
-            16   & 下降空间水流速   & $ u_d $        & $ m/s $    & $ C_R \cdot D \cdot v_d / F_d $                                       &      \\ \hline
-            17   & 下降空间阻力     & $ \Delta P_d $ & $ Pa $     & $ (\lambda \frac{H_o}{De}+\sum \xi)\frac{u_{d}^{2} \cdot \rho_d}{2} $ &      \\ \hline
+            序号 & 项目             & 符号           & 单位       & 公式及来源                                                            & 数值             \\ \hline
+            1    & 循环倍率         & $ C_R $        &            & 假定                                                                  & 4                \\ \hline
+            2    & 给水温度         & $ t_f $        & $ ^oC $    & 给定                                                                  & 220              \\ \hline
+            3    & 二回路饱和温度   & $ t_s $        & $ ^oC $    & 查表                                                                  & 264              \\ \hline
+            4    & 下降空间水比容   & $ v_d $        & $ m^3/kg $ & 近似取饱和比容                                                        & $ 1.29*10^{-3} $ \\ \hline
+            5    & 下降空间水密度   & $ \rho_d $     & $ kg/m^3 $ & $ \frac{1}{v_d} $                                                     & 777.58           \\ \hline
+            6    & 入口阻力系数     & $ \xi_{in} $   &            & 选取                                                                  & 1                \\ \hline
+            7    & 出口阻力系数     & $ \xi_{out} $  &            & 选取                                                                  & 1                \\ \hline
+            8    & 定位装置阻力系数 & $ \xi_f $      &            & 选取                                                                  & 1                \\ \hline
+            9    & 下降空间高度     & $ H_0 $        & $ m $      & 结构设计定                                                            & 7.0              \\ \hline
+            10   & 套筒外径         & $ D_{w0} $     & $ m $      & 结构设计定                                                            & 2.15             \\ \hline
+            11   & 下筒体内径       & $ D_{si} $     & $ m $      & 结构设计定                                                            & 2.33             \\ \hline
+            12   & 下降空间当量直径 & $ D_{si} $     & $ m $      & $ D_{si} - D_{wo} $                                                   & 0.18             \\ \hline
+            13   & 绝对粗糙度       & $ \Delta $     & $ m $      & 选定                                                                  & $ 1.5*10^{-4} $  \\ \hline
+            14   & 摩擦系数         & $ \lambda_d $  &            & $ \frac{1}{(1.74+21g \frac{De}{2 \Delta})^2} $                        & 0.019            \\ \hline
+            15   & 下降空间截面积   & $ F_d $        & $ m^2 $    & $ \frac{\pi}{4}(D_{si}^{2}-D_{wo}^{2}) $                              & 0.633            \\ \hline
+            16   & 下降空间水流速   & $ u_d $        & $ m/s $    & $ C_R \cdot D \cdot v_d / F_d $                                       & 1.02             \\ \hline
+            17   & 下降空间阻力     & $ \Delta P_d $ & $ Pa $     & $ (\lambda \frac{H_o}{De}+\sum \xi)\frac{u_{d}^{2} \cdot \rho_d}{2} $ & 1533.98          \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -115,37 +115,37 @@
     \scalebox{1.0}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目                         & 符号                      & 单位       & 公式及来源                                                                                    & 数值 \\ \hline
-            1    & 饱和水比容                   & $ v^{'} $                 & $ m^3/kg $ & 查表                                                                                          &      \\ \hline
-            2    & 饱和水密度                   & $ \rho^{'} $              & $ kg/m^3 $ & $ 1/v^{'} $                                                                                   &      \\ \hline
-            3    & 饱和蒸汽比容                 & $ v^{''} $                & $ m^3/kg $ & 查表                                                                                          &      \\ \hline
-            4    & 饱和蒸汽密度                 & $ \rho^{''} $             & $ kg/m^3 $ & $ 1/v^{'} $                                                                                   &      \\ \hline
-            5    & 套筒内径                     & $ D_{w1} $                & $ m $      & 结构设计定                                                                                    &      \\ \hline
-            6    & 传热管外径                   & $ d_0 $                   & $ m $      & 热工计算定                                                                                    &      \\ \hline
-            7    & 支撑板定位拉杆数量           & $ n^{'} $                 & 根         & 结构设计定                                                                                    &      \\ \hline
-            8    & 上升空间流通面积             & $ F_u $                   & $ m^2 $    & $ \frac{\pi}{4}[D_{w_1}^{2}-(2n+n^{'})d_{o}^{2}] $                                            &      \\ \hline
-            9    & 上升空间当量直径             & $ de $                    & $ m $      & $ \frac{4F_u}{\pi[D_{wi}+(2n+n^{'})d_o]} $                                                    &      \\ \hline
-            10   & 循环速度                     & $ u_o $                   & $ m/s $    & $ \frac{C_RDv^{'}}{F_u} $                                                                     &      \\ \hline
-            11   & 出口水相折算速度             & $ u_{o2}^{'} $            & $ m/s $    & $ \frac{(C_R - 1)Dv^{'}}{F_u} $                                                               &      \\ \hline
-            12   & 水相平均折算速度             & $ \overline{u_{o}^{'}} $  & $ m/s $    & $ \frac{1}{2}(u_o + u_{o2}^{'}) $                                                             &      \\ \hline
-            13   & 出口汽相折算速度             & $ u_{o2}^{''} $           & $ m/s $    & $ Dv^{''} / F_u $                                                                             &      \\ \hline
-            14   & 汽相平均折算速度             & $ \overline{u_{o}^{''}} $ &            & $ \frac{1}{2}u_{o2}^{''} $                                                                    &      \\ \hline
-            15   & 水相运动粘度                 & $ v_1 $                   & $ m^2/s $  & 查表                                                                                          &      \\ \hline
-            16   & 汽相运动粘度                 & $ v_g $                   & $ m^2/s $  & 查表                                                                                          &      \\ \hline
-            17   & 水相雷诺数                   & $ Re_{lo} $               &            & $ \overline{u_{o}^{'}} de / v_l $                                                             &      \\ \hline
-            18   & 汽相雷诺数                   & $ Re_{go} $               &            & $ \overline{u_{o}^{''}} de / v_g $                                                            &      \\ \hline
-            19   & 判别流态                     &                           &            & 临界值：$ 1000 $                                                                              &      \\ \hline
-            20   & 管束直段高                   & $ H_s $                   & $ m $      & 结构设计定                                                                                    &      \\ \hline
-            21   & 水相摩阻系数                 & $ \lambda_{lo} $          &            & $ 0.3164Re_{lo}^{-0.25} $                                                                     &      \\ \hline
-            22   & 汽相摩阻系数                 & $ \lambda_{go} $          &            & $ 0.3164Re_{go}^{-0.25} $                                                                     &      \\ \hline
-            23   & 按折算速度计算的水相摩擦阻力 & $ (\Delta P_f)_{lo} $     & $ Pa $     & $ \lambda_{lo} \frac{H_s}{de} \frac{\overline{u_{o}^{'2}} \cdot  \rho^{'}}{2} $               &      \\ \hline
-            24   & 按折算速度计算的汽相摩擦阻力 & $ (\Delta P_f)_{go} $     & $ Pa $     & $ \frac{1}{3} \lambda_{lo} \frac{H_s}{de} \frac{\overline{u_{o}^{''2}} \cdot  \rho^{''}}{2} $ &      \\ \hline
-            25   & 参 量 X                      &                           &            & $ \sqrt{(\Delta P_f)_{lo}/(\Delta P_f)_{go}} $                                                &      \\ \hline
-            26   & $ \Phi_{l}^{2} $             &                           &            & 查图或计算                                                                                    &      \\ \hline
-            27   & $ \Phi_{g}^{2} $             &                           &            & 查图或计算                                                                                    &      \\ \hline
-            28   & 水相摩擦阻力                 & $ (\Delta P_f)_{l} $      & $ Pa $     & $ \Phi_{l}^{2} \cdot (\Delta P_f)_{lo} $                                                      &      \\ \hline
-            29   & 汽相摩擦阻力                 & $ (\Delta P_f)_{g} $      & $ Pa $     & $ \Phi_{g}^{2} \cdot (\Delta P_f)_{go} $                                                      &      \\ \hline
-            30   & 摩擦阻力                     & $ \Delta P_f $            & $ Pa $     & $ [(\Delta P_f)_{l}+(\Delta P_f)_{g}]/2 $                                                     &      \\ \hline
+            序号 & 项目                         & 符号                      & 单位       & 公式及来源                                                                                    & 数值             \\ \hline
+            1    & 饱和水比容                   & $ v^{'} $                 & $ m^3/kg $ & 查表                                                                                          & $ 1.29*10^{-3} $ \\ \hline
+            2    & 饱和水密度                   & $ \rho^{'} $              & $ kg/m^3 $ & $ 1/v^{'} $                                                                                   & 777.61           \\ \hline
+            3    & 饱和蒸汽比容                 & $ v^{''} $                & $ m^3/kg $ & 查表                                                                                          & 0.039            \\ \hline
+            4    & 饱和蒸汽密度                 & $ \rho^{''} $             & $ kg/m^3 $ & $ 1/v^{'} $                                                                                   & 25.36            \\ \hline
+            5    & 套筒内径                     & $ D_{w1} $                & $ m $      & 结构设计定                                                                                    & 2.13             \\ \hline
+            6    & 传热管外径                   & $ d_0 $                   & $ m $      & 热工计算定                                                                                    & 0.022            \\ \hline
+            7    & 支撑板定位拉杆数量           & $ n^{'} $                 & 根         & 结构设计定                                                                                    & 12               \\ \hline
+            8    & 上升空间流通面积             & $ F_u $                   & $ m^2 $    & $ \frac{\pi}{4}[D_{w_1}^{2}-(2n+n^{'})d_{o}^{2}] $                                            & 2.26             \\ \hline
+            9    & 上升空间当量直径             & $ de $                    & $ m $      & $ \frac{4F_u}{\pi[D_{wi}+(2n+n^{'})d_o]} $                                                    & 0.037            \\ \hline
+            10   & 循环速度                     & $ u_o $                   & $ m/s $    & $ \frac{C_RDv^{'}}{F_u} $                                                                     & 0.288            \\ \hline
+            11   & 出口水相折算速度             & $ u_{o2}^{'} $            & $ m/s $    & $ \frac{(C_R - 1)Dv^{'}}{F_u} $                                                               & 0.22             \\ \hline
+            12   & 水相平均折算速度             & $ \overline{u_{o}^{'}} $  & $ m/s $    & $ \frac{1}{2}(u_o + u_{o2}^{'}) $                                                             & 0.25             \\ \hline
+            13   & 出口汽相折算速度             & $ u_{o2}^{''} $           & $ m/s $    & $ Dv^{''} / F_u $                                                                             & 2.17             \\ \hline
+            14   & 汽相平均折算速度             & $ \overline{u_{o}^{''}} $ &            & $ \frac{1}{2}u_{o2}^{''} $                                                                    & 1.09             \\ \hline
+            15   & 水相运动粘度                 & $ v_1 $                   & $ m^2/s $  & 查表                                                                                          & $ 1.28*10^{-7} $ \\ \hline
+            16   & 汽相运动粘度                 & $ v_g $                   & $ m^2/s $  & 查表                                                                                          & $ 7.11*10^{-7} $ \\ \hline
+            17   & 水相雷诺数                   & $ Re_{lo} $               &            & $ \overline{u_{o}^{'}} de / v_l $                                                             & 72800            \\ \hline
+            18   & 汽相雷诺数                   & $ Re_{go} $               &            & $ \overline{u_{o}^{''}} de / v_g $                                                            & 56700            \\ \hline
+            19   & 判别流态                     &                           &            & 临界值：$ 1000 $                                                                              & 紊流             \\ \hline
+            20   & 管束直段高                   & $ H_s $                   & $ m $      & 结构设计定                                                                                    & 4.46             \\ \hline
+            21   & 水相摩阻系数                 & $ \lambda_{lo} $          &            & $ 0.3164Re_{lo}^{-0.25} $                                                                     & 0.019            \\ \hline
+            22   & 汽相摩阻系数                 & $ \lambda_{go} $          &            & $ 0.3164Re_{go}^{-0.25} $                                                                     & 0.021            \\ \hline
+            23   & 按折算速度计算的水相摩擦阻力 & $ (\Delta P_f)_{lo} $     & $ Pa $     & $ \lambda_{lo} \frac{H_s}{de} \frac{\overline{u_{o}^{'2}} \cdot  \rho^{'}}{2} $               & 52.21            \\ \hline
+            24   & 按折算速度计算的汽相摩擦阻力 & $ (\Delta P_f)_{go} $     & $ Pa $     & $ \frac{1}{3} \lambda_{lo} \frac{H_s}{de} \frac{\overline{u_{o}^{''2}} \cdot  \rho^{''}}{2} $ & 12.35            \\ \hline
+            25   & 参 量 X                      &                           &            & $ \sqrt{(\Delta P_f)_{lo}/(\Delta P_f)_{go}} $                                                & 2.15             \\ \hline
+            26   & $ \Phi_{l}^{2} $             &                           &            & 查图或计算                                                                                    & 10.51            \\ \hline
+            27   & $ \Phi_{g}^{2} $             &                           &            & 查图或计算                                                                                    & 48.67            \\ \hline
+            28   & 水相摩擦阻力                 & $ (\Delta P_f)_{l} $      & $ Pa $     & $ \Phi_{l}^{2} \cdot (\Delta P_f)_{lo} $                                                      & 601.26           \\ \hline
+            29   & 汽相摩擦阻力                 & $ (\Delta P_f)_{g} $      & $ Pa $     & $ \Phi_{g}^{2} \cdot (\Delta P_f)_{go} $                                                      & 601.26           \\ \hline
+            30   & 摩擦阻力                     & $ \Delta P_f $            & $ Pa $     & $ [(\Delta P_f)_{l}+(\Delta P_f)_{g}]/2 $                                                     & 601.26           \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -157,24 +157,24 @@
     \scalebox{1.1}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目                         & 符号                  & 单位       & 公式及来源                                                               & 数值 \\ \hline
-            1    & 支撑板数目                   & $ N $                 & 个         & 结构设计定                                                               &      \\ \hline
-            2    & 上升流道单元面积             & $ A_u $               & $ mm^{2} $ & 结构设计定                                                               &      \\ \hline
-            3    & 支撑板单元开孔面积           & $ a_u $               & $ mm^{2} $ & 结构设计定                                                               &      \\ \hline
-            4    & 面 积 比                     &                       &            & $ a_u / A_u $                                                            &      \\ \hline
-            5    & 局部阻力系数                 & $ \xi_l $             &            & 查 图                                                                    &      \\ \hline
-            6    & 按折算速度计算的水相局部阻力 & $ (\Delta P_l)_{lo} $ & $ Pa $     & $ N \xi_l \frac{\overline{u_{o}^{'2}} \cdot \rho^{'}}{2} $               &      \\ \hline
-            7    & 按折算速度计算的汽相局部阻力 & $ (\Delta P_l)_{go} $ & $ Pa $     & $ \frac{1}{3} N \xi_l \frac{\overline{u_{o}^{''2}} \cdot \rho^{''}}{2} $ &      \\ \hline
-            8    & 参 量$ X $                   &                       &            & $ \sqrt{(\Delta P_l)_{lo}/(\Delta P_l)_{go}} $                           &      \\ \hline
-            9    & 二回路工作压力               & $ p_s $               & $ Pa $     & 给定                                                                     &      \\ \hline
-            10   & 临界压力                     & $ p_c $               & $ Pa $     & 查水蒸汽表                                                               &      \\ \hline
-            11   & 参数$ Z_R $                  &                       &            & $ (0.19+0.92 \frac{p_s}{p_c})^{-1} $                                     &      \\ \hline
-            12   & 参数$ K $                    &                       &            & $ Z_R + \frac{1}{Z_R} $                                                  &      \\ \hline
-            13   & $ \Phi_{l}^{2} $             &                       &            & $ 1 + \frac{K}{X} + \frac{1}{X^{2}} $                                    &      \\ \hline
-            14   & $ \Phi_{g}^{2} $             &                       &            & $ 1+KX + X^{2} $                                                         &      \\ \hline
-            15   & 水相局部阻力                 & $ (\Delta P_l)_{l} $  & $ Pa $     & $ \Phi_{l}^{2} \cdot (\Delta P_l)_{lo} $                                 &      \\ \hline
-            16   & 汽相局部阻力                 & $ (\Delta P_l)_{g} $  & $ Pa $     & $ \Phi_{g}^{2} \cdot (\Delta P_l)_{go} $                                 &      \\ \hline
-            17   & 局部阻力                     & $ \Delta P_l $        & $ Pa $     & $ [ (\Delta P_l)_{l} + (\Delta P_l)_{g} ] / 2 $                          &      \\ \hline
+            序号 & 项目                         & 符号                  & 单位       & 公式及来源                                                               & 数值   \\ \hline
+            1    & 支撑板数目                   & $ N $                 & 个         & 结构设计定                                                               & 6      \\ \hline
+            2    & 上升流道单元面积             & $ A_u $               & $ mm^{2} $ & 结构设计定                                                               & 670    \\ \hline
+            3    & 支撑板单元开孔面积           & $ a_u $               & $ mm^{2} $ & 结构设计定                                                               & 147    \\ \hline
+            4    & 面 积 比                     &                       &            & $ a_u / A_u $                                                            & 0.22   \\ \hline
+            5    & 局部阻力系数                 & $ \xi_l $             &            & 查 图                                                                    & 40     \\ \hline
+            6    & 按折算速度计算的水相局部阻力 & $ (\Delta P_l)_{lo} $ & $ Pa $     & $ N \xi_l \frac{\overline{u_{o}^{'2}} \cdot \rho^{'}}{2} $               & 3023.3 \\ \hline
+            7    & 按折算速度计算的汽相局部阻力 & $ (\Delta P_l)_{go} $ & $ Pa $     & $ \frac{1}{3} N \xi_l \frac{\overline{u_{o}^{''2}} \cdot \rho^{''}}{2} $ & 1205.2 \\ \hline
+            8    & 参 量$ X $                   &                       &            & $ \sqrt{(\Delta P_l)_{lo}/(\Delta P_l)_{go}} $                           & 1.6    \\ \hline
+            9    & 二回路工作压力               & $ p_s $               & $ Pa $     & 给定                                                                     & 5      \\ \hline
+            10   & 临界压力                     & $ p_c $               & $ Pa $     & 查水蒸汽表                                                               & 22.06  \\ \hline
+            11   & 参数$ Z_R $                  &                       &            & $ (0.19+0.92 \frac{p_s}{p_c})^{-1} $                                     & 2.51   \\ \hline
+            12   & 参数$ K $                    &                       &            & $ Z_R + \frac{1}{Z_R} $                                                  & 2.91   \\ \hline
+            13   & $ \Phi_{l}^{2} $             &                       &            & $ 1 + \frac{K}{X} + \frac{1}{X^{2}} $                                    & 3.24   \\ \hline
+            14   & $ \Phi_{g}^{2} $             &                       &            & $ 1+KX + X^{2} $                                                         & 12.26  \\ \hline
+            15   & 水相局部阻力                 & $ (\Delta P_l)_{l} $  & $ Pa $     & $ \Phi_{l}^{2} \cdot (\Delta P_l)_{lo} $                                 & 9795.5 \\ \hline
+            16   & 汽相局部阻力                 & $ (\Delta P_l)_{g} $  & $ Pa $     & $ \Phi_{g}^{2} \cdot (\Delta P_l)_{go} $                                 & 9749.9 \\ \hline
+            17   & 局部阻力                     & $ \Delta P_l $        & $ Pa $     & $ [ (\Delta P_l)_{l} + (\Delta P_l)_{g} ] / 2 $                          & 9749.9 \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -186,25 +186,25 @@
     \scalebox{1.1}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目                 & 符号                  & 单位  & 公式及来源                                                                                            & 数值 \\ \hline
-            1    & 管束弯头最大节园直径 & $ d_b $               & $ m $ & 结构设计定                                                                                            &      \\ \hline
-            2    & 弯管区重心至园心距离 & $ y_s $               & $ m $ & $ 0.2122d_b $                                                                                         &      \\ \hline
-            3    & 节 距                & $ t $                 & $ m $ & 结构设计定                                                                                            &      \\ \hline
-            4    & 计算冲刷排数         & $ N^{'} $             &       & $ \frac{y_s}{t} - 1 $(取整数)                                                                         &      \\ \hline
-            5    & 系 数                & $ x_1 = x_2 $         &       & $ t/d_o $                                                                                             &      \\ \hline
-            6    & 系 数                & $ n $                 &       & $ 0.43 + \frac{1.13}{x_1} $                                                                           &      \\ \hline
-            7    & 水相雷诺数           & $ Re_{lo} $           &       & $ u_{o2}^{'}de / v_l $                                                                                &      \\ \hline
-            8    & 汽相雷诺数           & $ Re_{go} $           &       & $ u_{o2}^{''}de / v_g $                                                                               &      \\ \hline
-            9    & 水相磨擦阻力系数     & $ \lambda_{lo} $      &       & $ 4\left[0.044+\frac{0.08 x_{2}}{\left(x_{1}-1\right)^{n}}\right] \mathrm{Re}_{l o}^{-0.15} $         &      \\ \hline
-            10   & 汽相磨擦阻力系数     & $ \lambda_{go} $      &       & $ 4\left[0.044+\frac{0.08 x_{2}}{\left(x_{1}-1\right)^{n}}\right] \mathrm{Re}_{g o}^{-0.15} $         &      \\ \hline
-            11   & 水 相 阻 力          & $ (\Delta P_b)_{lo} $ &       & $ N^{\prime} \lambda_{l o} \cdot \frac{u_{o 2}^{\prime} \rho^{\prime}}{2} $                           &      \\ \hline
-            12   & 汽 相 阻 力          & $ (\Delta P_b)_{go} $ &       & $ \frac{1}{3} N^{\prime} \lambda_{g o} \cdot \frac{u_{o 2}^{\prime \prime} \rho^{\prime \prime}}{2} $ &      \\ \hline
-            13   & 参 量$ X $           &                       &       & $ \sqrt{(\Delta P_b)_{lo / (\Delta P_b)_{go}}} $                                                      &      \\ \hline
-            14   & $ \Phi_{lo}^{2} $    &                       &       & 查图或计算(同摩擦阻力)                                                                                &      \\ \hline
-            15   & $ \Phi_{go}^{2} $    &                       &       & 查图或计算(同摩擦阻力)                                                                                &      \\ \hline
-            16   & 水 相 阻 力          & $ (\Delta P_b)_{l} $  &       & $ \Phi_{lo}^{2} \cdot (\Delta P_b)_{l} $                                                              &      \\ \hline
-            17   & 汽 相 阻 力          & $ (\Delta P_b)_{g} $  &       & $ \Phi_{go}^{2} \cdot (\Delta P_b)_{g} $                                                              &      \\ \hline
-            18   & 弯 管 区 阻 力       & $ \Delta P_b $        &       & $ [(\Delta P_b)_{l} + (\Delta P_b)_{g}] / 2 $                                                         &      \\ \hline
+            序号 & 项目                 & 符号                  & 单位  & 公式及来源                                                                                            & 数值    \\ \hline
+            1    & 管束弯头最大节园直径 & $ d_b $               & $ m $ & 结构设计定                                                                                            & 2.1     \\ \hline
+            2    & 弯管区重心至园心距离 & $ y_s $               & $ m $ & $ 0.2122d_b $                                                                                         & 0.4456  \\ \hline
+            3    & 节 距                & $ t $                 & $ m $ & 结构设计定                                                                                            & 0.0297  \\ \hline
+            4    & 计算冲刷排数         & $ N^{'} $             &       & $ \frac{y_s}{t} - 1 $(取整数)                                                                         & 14      \\ \hline
+            5    & 系 数                & $ x_1 = x_2 $         &       & $ t/d_o $                                                                                             & 1.35    \\ \hline
+            6    & 系 数                & $ n $                 &       & $ 0.43 + \frac{1.13}{x_1} $                                                                           & 1.267   \\ \hline
+            7    & 水相雷诺数           & $ Re_{lo} $           &       & $ u_{o2}^{'}de / v_l $                                                                                & 41625   \\ \hline
+            8    & 汽相雷诺数           & $ Re_{go} $           &       & $ u_{o2}^{''}de / v_g $                                                                               & 112925  \\ \hline
+            9    & 水相磨擦阻力系数     & $ \lambda_{lo} $      &       & $ 4\left[0.044+\frac{0.08 x_{2}}{\left(x_{1}-1\right)^{n}}\right] \mathrm{Re}_{l o}^{-0.15} $         & 0.37    \\ \hline
+            10   & 汽相磨擦阻力系数     & $ \lambda_{go} $      &       & $ 4\left[0.044+\frac{0.08 x_{2}}{\left(x_{1}-1\right)^{n}}\right] \mathrm{Re}_{g o}^{-0.15} $         & 0.32    \\ \hline
+            11   & 水 相 阻 力          & $ (\Delta P_b)_{lo} $ &       & $ N^{\prime} \lambda_{l o} \cdot \frac{u_{o 2}^{\prime} \rho^{\prime}}{2} $                           & 287.41  \\ \hline
+            12   & 汽 相 阻 力          & $ (\Delta P_b)_{go} $ &       & $ \frac{1}{3} N^{\prime} \lambda_{g o} \cdot \frac{u_{o 2}^{\prime \prime} \rho^{\prime \prime}}{2} $ & 40.46   \\ \hline
+            13   & 参 量$ X $           &                       &       & $ \sqrt{(\Delta P_b)_{lo / (\Delta P_b)_{go}}} $                                                      & 2.66    \\ \hline
+            14   & $ \Phi_{lo}^{2} $    &                       &       & 查图或计算(同摩擦阻力)                                                                                & 8.66    \\ \hline
+            15   & $ \Phi_{go}^{2} $    &                       &       & 查图或计算(同摩擦阻力)                                                                                & 56.7    \\ \hline
+            16   & 水 相 阻 力          & $ (\Delta P_b)_{l} $  &       & $ \Phi_{lo}^{2} \cdot (\Delta P_b)_{l} $                                                              & 2489.64 \\ \hline
+            17   & 汽 相 阻 力          & $ (\Delta P_b)_{g} $  &       & $ \Phi_{go}^{2} \cdot (\Delta P_b)_{g} $                                                              & 2304.5  \\ \hline
+            18   & 弯 管 区 阻 力       & $ \Delta P_b $        &       & $ [(\Delta P_b)_{l} + (\Delta P_b)_{g}] / 2 $                                                         & 2397.1  \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -215,13 +215,13 @@
     \scalebox{1.2}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目               & 符号           & 单位          & 公式及来源                                                                                                 & 数值 \\ \hline
-            1    & 管束出口质量含汽率 & $ x_2 $        &               & $ 1/C_R $                                                                                                  &      \\ \hline
-            2    & 管束出口体积含汽率 & $ \beta_2 $    &               & $ \frac{x_{2} / \rho^{\prime \prime}}{x_{2} / \rho^{\prime \prime}+\left(1-x_{2}\right) / \rho^{\prime}} $ &      \\ \hline
-            3    & 系数               & $ C $          &               & $ 0.833 + 0.05 \ln(\frac{p_s}{10^{6}}) $                                                                   &      \\ \hline
-            4    & 管束出口截面含汽率 & $ \phi_2 $     &               & $ C \beta_2 $                                                                                              &      \\ \hline
-            5    & 质量流速           & $ \dot{G} $    & $ kg/m^{2}s $ & $ u_o \rho^{'} $                                                                                           &      \\ \hline
-            6    & 加速阻力           & $ \Delta p_a $ & $ Pa $        & $ \dot{G}^{2}\left[\begin{array}{l} \frac{\left(1-x_{2}\right)^{2}}{\rho^{\prime}\left(1-\varphi_{2}\right)}+\frac{x_{2}^{2}}{\rho^{\prime \prime} \varphi_{2}} \\ -\frac{1}{\rho^{\prime}} \end{array}\right] $                                                      &      \\ \hline
+            序号 & 项目               & 符号           & 单位          & 公式及来源                                                                                                 & 数值   \\ \hline
+            1    & 管束出口质量含汽率 & $ x_2 $        &               & $ 1/C_R $                                                                                                  & 0.333  \\ \hline
+            2    & 管束出口体积含汽率 & $ \beta_2 $    &               & $ \frac{x_{2} / \rho^{\prime \prime}}{x_{2} / \rho^{\prime \prime}+\left(1-x_{2}\right) / \rho^{\prime}} $ & 0.939  \\ \hline
+            3    & 系数               & $ C $          &               & $ 0.833 + 0.05 \ln(\frac{p_s}{10^{6}}) $                                                                   & 0.887  \\ \hline
+            4    & 管束出口截面含汽率 & $ \phi_2 $     &               & $ C \beta_2 $                                                                                              & 0.833  \\ \hline
+            5    & 质量流速           & $ \dot{G} $    & $ kg/m^{2}s $ & $ u_o \rho^{'} $                                                                                           & 167.78 \\ \hline
+            6    & 加速阻力           & $ \Delta p_a $ & $ Pa $        & $ \dot{G}^{2}\left[\begin{array}{l} \frac{\left(1-x_{2}\right)^{2}}{\rho^{\prime}\left(1-\varphi_{2}\right)}+\frac{x_{2}^{2}}{\rho^{\prime \prime} \varphi_{2}} \\ -\frac{1}{\rho^{\prime}} \end{array}\right] $                                                      & 208.1  \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -232,12 +232,12 @@
     \scalebox{1.5}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目         & 符号           & 单位       & 公式及来源                                  & 数值 \\ \hline
-            1    & 单 元 面 积  & $ A_{u}^{'} $  & $ mm^{2} $ & 结构设计定                                  &      \\ \hline
-            2    & 单元开孔面积 & $ a_{u}^{'} $  & $ mm^{2} $ & 结构设计定                                  &      \\ \hline
-            3    & 系 数        &                &            & $ a_{u}^{\prime} / A_{u}^{\prime} $         &      \\ \hline
-            4    & 阻 力 系 数  & $ \xi_h $      &            & 查文献                                      &      \\ \hline
-            5    & 孔板局部阻力 & $ \Delta P_h $ & $ Pa $     & $ \xi_h \frac{u_{0}^{2} \rho^{\prime}}{2} $ &      \\ \hline
+            序号 & 项目         & 符号           & 单位       & 公式及来源                                  & 数值  \\ \hline
+            1    & 单 元 面 积  & $ A_{u}^{'} $  & $ mm^{2} $ & 结构设计定                                  & 533   \\ \hline
+            2    & 单元开孔面积 & $ a_{u}^{'} $  & $ mm^{2} $ & 结构设计定                                  & 216   \\ \hline
+            3    & 系 数        &                &            & $ a_{u}^{\prime} / A_{u}^{\prime} $         & 0.405 \\ \hline
+            4    & 阻 力 系 数  & $ \xi_h $      &            & 查文献                                      & 8     \\ \hline
+            5    & 孔板局部阻力 & $ \Delta P_h $ & $ Pa $     & $ \xi_h \frac{u_{0}^{2} \rho^{\prime}}{2} $ & 144.8 \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -248,8 +248,8 @@
     \scalebox{1.1}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目         & 符号           & 单位   & 公式及来源                                                         & 数值 \\ \hline
-            1    & 上开空间阻力 & $ \Delta P_r $ & $ Pa $ & $ \Delta P_f + \Delta P_l + \Delta P_b + \Delta P_a + \Delta P_h $ &      \\ \hline
+            序号 & 项目         & 符号           & 单位   & 公式及来源                                                         & 数值    \\ \hline
+            1    & 上开空间阻力 & $ \Delta P_r $ & $ Pa $ & $ \Delta P_f + \Delta P_l + \Delta P_b + \Delta P_a + \Delta P_h $ & 12936.9 \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -262,8 +262,8 @@
     \scalebox{1.3}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目           & 符号           & 单位   & 公式及来源 & 数值 \\ \hline
-            1    & 汽水分离器阻力 & $ \Delta P_s $ & $ Pa $ &            &      \\ \hline
+            序号 & 项目           & 符号           & 单位   & 公式及来源 & 数值  \\ \hline
+            1    & 汽水分离器阻力 & $ \Delta P_s $ & $ Pa $ &            & 12600 \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -276,8 +276,8 @@
     \scalebox{1.3}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目       & 符号                     & 单位   & 公式及来源                               & 数值 \\ \hline
-            1    & 循环总阻力 & $ \Delta P_{\text{总}} $ & $ Pa $ & $ \Delta P_d + \Delta P_r + \Delta P_s $ &      \\ \hline
+            序号 & 项目       & 符号                     & 单位   & 公式及来源                               & 数值    \\ \hline
+            1    & 循环总阻力 & $ \Delta P_{\text{总}} $ & $ Pa $ & $ \Delta P_d + \Delta P_r + \Delta P_s $ & 26399.8 \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -290,18 +290,18 @@
     \scalebox{1.2}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目                        & 符号        & 单位                      & 公式及来源                                                                                                                                                               & 数值 \\ \hline
-            1    & 循环倍率                    & $ C_R $     &                           & 假 定                                                                                                                                                                    &      \\ \hline
-            2    & 二回路给水焓                & $ i_f $     & $ J/kg $                  & 查 表                                                                                                                                                                    &      \\ \hline
-            3    & 二回路饱和水焓              & $ i_s $     & $ J/kg $                  & 查 表                                                                                                                                                                    &      \\ \hline
-            4    & 液 面 高 度                 & $ H_o $     & $ m $                     & 结构设计定                                                                                                                                                               &      \\ \hline
-            5    & 下 降 空 间 水 密 度        & $ \rho_d $  & $ kg/m^{3} $              & 取 $ \rho_d = rho^{\prime} $                                                                                                                                             &      \\ \hline
-            6    & 下降空间下端压力            & $ p_{low} $ & $ Pa $                    & $ p_s + g \rho_d H_o $                                                                                                                                                   &      \\ \hline
-            7    & $ p_{low} $压力下的饱和水焓 & $ i_{sl} $  & $ J/kg $                  & 查 表                                                                                                                                                                    &      \\ \hline
-            8    & $ \Delta i / \Delta P $     &             & $ \frac{J}{kg \cdot Pa} $ & $ (i_{sl} - i_{s}) / (p_{low} - p_{s}) $                                                                                                                                 &      \\ \hline
-            9    & 热负荷                      & $ q $       & $ W/m^{2} $               & 热工计算定                                                                                                                                                               &      \\ \hline
-            10   & 循环水量                    & $ G $       & $ kg/s $                  & $ C_R \cdot D $                                                                                                                                                          &      \\ \hline
-            11   & 予热段高度                  & $ H_p $     & $ m $                     & $ \frac{\frac{i_{s}-i_{f}}{C_{R}}+\frac{\Delta i}{\Delta P}\left(\rho_{d} g H_{o}-\Delta P_{d}\right)}{\frac{2 \pi d_{o} n q}{G}+\frac{\Delta i}{\Delta P} \rho_{d} g} $ &      \\ \hline
+            序号 & 项目                        & 符号        & 单位                      & 公式及来源                                                                                                                                                               & 数值             \\ \hline
+            1    & 循环倍率                    & $ C_R $     &                           & 假 定                                                                                                                                                                    & 3                \\ \hline
+            2    & 二回路给水焓                & $ i_f $     & $ J/kg $                  & 查 表                                                                                                                                                                    & 944880           \\ \hline
+            3    & 二回路饱和水焓              & $ i_s $     & $ J/kg $                  & 查 表                                                                                                                                                                    & 1155100          \\ \hline
+            4    & 液 面 高 度                 & $ H_o $     & $ m $                     & 结构设计定                                                                                                                                                               & 7                \\ \hline
+            5    & 下 降 空 间 水 密 度        & $ \rho_d $  & $ kg/m^{3} $              & 取 $ \rho_d = rho^{\prime} $                                                                                                                                             & 777.61           \\ \hline
+            6    & 下降空间下端压力            & $ p_{low} $ & $ Pa $                    & $ p_s + g \rho_d H_o $                                                                                                                                                   & 5053304          \\ \hline
+            7    & $ p_{low} $压力下的饱和水焓 & $ i_{sl} $  & $ J/kg $                  & 查 表                                                                                                                                                                    & $ 1.159*10^{6} $ \\ \hline
+            8    & $ \Delta i / \Delta P $     &             & $ \frac{J}{kg \cdot Pa} $ & $ (i_{sl} - i_{s}) / (p_{low} - p_{s}) $                                                                                                                                 & 0.0711           \\ \hline
+            9    & 热负荷                      & $ q $       & $ W/m^{2} $               & 热工计算定                                                                                                                                                               & 203174           \\ \hline
+            10   & 循环水量                    & $ G $       & $ kg/s $                  & $ C_R \cdot D $                                                                                                                                                          & 378              \\ \hline
+            11   & 予热段高度                  & $ H_p $     & $ m $                     & $ \frac{\frac{i_{s}-i_{f}}{C_{R}}+\frac{\Delta i}{\Delta P}\left(\rho_{d} g H_{o}-\Delta P_{d}\right)}{\frac{2 \pi d_{o} n q}{G}+\frac{\Delta i}{\Delta P} \rho_{d} g} $ & 0.582            \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -312,16 +312,16 @@
     \scalebox{1.2}{
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
-            序号 & 项目                       & 符号                   & 单位   & 公式及来源                                                                                                                   & 数值 \\ \hline
-            1    & 蒸发段高度                 & $ H_{r1} $             & $ m $  & $ H_{tb} - H_{P} $                                                                                                           &      \\ \hline
-            2    & 管束上方区段高度           & $ H_{r2} $             & $ m $  & $ H_{o} - H_{tb} $                                                                                                           &      \\ \hline
-            3    & 蒸发段平均质量含汽率       & $ \overline{x_1} $     &        & $ x_2 / 2 $                                                                                                                  &      \\ \hline
-            4    & 蒸发段平均体积含汽率       & $ \overline{\beta_1} $ &        & $ \frac{\bar{x}_{1} / \rho^{\prime \prime}}{\bar{x}_{1} / \rho^{\prime \prime}+\left(1-\bar{x}_{1}\right) / \rho^{\prime}} $ &      \\ \hline
-            5    & 蒸发段平均截面含汽率       & $ \overline{\phi_1} $  &        & $ C \overline{\beta_1} $                                                                                                     &      \\ \hline
-            6    & 管束上方区段平均截面含汽率 & $ \overline{\phi_2} $  &        & $ \overline{\phi_2} = \phi_2 $                                                                                               &      \\ \hline
-            7    & 蒸发段运动压头             & $ P_{m1} $             & $ Pa $ & $ (\rho^{'} - \rho^{''})g \overline{\phi_1} H_{r1} $                                                                         &      \\ \hline
-            8    & 管束上方区段压头           & $ P_{m2} $             & $ Pa $ & $ (\rho^{'} - \rho^{''})g \overline{\phi_2} H_{r2} $                                                                         &      \\ \hline
-            9    & 运动压头                   & $ P_m $                & $ Pa $ & $ P_{m1} + P_{m2} $                                                                                                          &      \\ \hline
+            序号 & 项目                       & 符号                   & 单位   & 公式及来源                                                                                                                   & 数值      \\ \hline
+            1    & 蒸发段高度                 & $ H_{r1} $             & $ m $  & $ H_{tb} - H_{P} $                                                                                                           & 4.93      \\ \hline
+            2    & 管束上方区段高度           & $ H_{r2} $             & $ m $  & $ H_{o} - H_{tb} $                                                                                                           & 1.51      \\ \hline
+            3    & 蒸发段平均质量含汽率       & $ \overline{x_1} $     &        & $ x_2 / 2 $                                                                                                                  & 0.17      \\ \hline
+            4    & 蒸发段平均体积含汽率       & $ \overline{\beta_1} $ &        & $ \frac{\bar{x}_{1} / \rho^{\prime \prime}}{\bar{x}_{1} / \rho^{\prime \prime}+\left(1-\bar{x}_{1}\right) / \rho^{\prime}} $ & 0.86      \\ \hline
+            5    & 蒸发段平均截面含汽率       & $ \overline{\phi_1} $  &        & $ C \overline{\beta_1} $                                                                                                     & 2.58      \\ \hline
+            6    & 管束上方区段平均截面含汽率 & $ \overline{\phi_2} $  &        & $ \overline{\phi_2} = \phi_2 $                                                                                               & 0.83      \\ \hline
+            7    & 蒸发段运动压头             & $ P_{m1} $             & $ Pa $ & $ (\rho^{'} - \rho^{''})g \overline{\phi_1} H_{r1} $                                                                         & 93705.62  \\ \hline
+            8    & 管束上方区段压头           & $ P_{m2} $             & $ Pa $ & $ (\rho^{'} - \rho^{''})g \overline{\phi_2} H_{r2} $                                                                         & 9269.31   \\ \hline
+            9    & 运动压头                   & $ P_m $                & $ Pa $ & $ P_{m1} + P_{m2} $                                                                                                          & 102974.93 \\ \hline
         \end{tabular}
     }
 \end{table}
