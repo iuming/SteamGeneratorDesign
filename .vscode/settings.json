@@ -112,5 +112,8 @@
     ],
     "latex-workshop.latex.autoClean.run": "onFailed",
     "latex-workshop.latex.recipe.default": "lastUsed",
-    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click"
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+    "files.associations": {
+        "iosfwd": "cpp"
+    }
 }
