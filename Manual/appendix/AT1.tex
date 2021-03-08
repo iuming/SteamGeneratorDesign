@@ -83,9 +83,9 @@
             9    & 管束直段高         & $ H_{\text{直}} $ & $ m $ & $ L_{\text{直}} / 2n$                                           & 4.46    \\ \hline
             10   & 管束弯段高         & $ H_{\text{弯}} $ & $ m $ & $ R_{max} $                                                     & 1.05    \\ \hline
             11   & 管束总高           & $ H_{tb} $        & $ m $ & $ H_{\text{直}} + H_{\text{弯}} $                               & 5.51    \\ \hline
-            12   & 传热管实际平均长度 & $ l $             & $ m $ & $ (\mathrm{L}_\text { 总 } / \mathrm{n})+2 \text { 管板厚 } $   & 11.38   \\ \hline
-            13   & 最长管子长         & $ l_{max} $       & $ m $ & $ \pi R_{\max }+2 \mathrm{H}_{\text {直 }}+2 \text { 管板厚 } $ & 16.234  \\ \hline
-            14   & 最短管子长         & $ l_{min} $       & $ m $ & $ \pi R_{\min }+2 \mathrm{H}_{\text {直 }}+2 \text { 管板厚 } $ & 10.013  \\ \hline
+            12   & 传热管实际平均长度 & $ l $             & $ m $ & $ (\mathrm{L}_\text { 总 } / \mathrm{n})+2 * \text { 管板厚 } $   & 11.38   \\ \hline
+            13   & 最长管子长         & $ l_{max} $       & $ m $ & $ \pi R_{\max }+2 \mathrm{H}_{\text {直 }}+2 * \text { 管板厚 } $ & 16.234  \\ \hline
+            14   & 最短管子长         & $ l_{min} $       & $ m $ & $ \pi R_{\min }+2 \mathrm{H}_{\text {直 }}+2 * \text { 管板厚 } $ & 10.013  \\ \hline
         \end{tabular}
     }
 \end{table}
@@ -98,7 +98,7 @@
         \begin{tabular}{|c|c|c|c|c|c|}
             \hline
             序号 & 项目           & 符号               & 单位       & 公式及来源                                           & 数值              \\ \hline
-            1    & 冷却剂平均比容 & $ \overline{v_1} $ & $ m^3/kg $ & 查表                                                 & $ 1.28*10……{-3} $ \\ \hline
+            1    & 冷却剂平均比容 & $ \overline{v_1} $ & $ m^3/kg $ & 查表                                                 & $ 1.28*10^{-3} $ \\ \hline
             2    & 主管道计算流速 & $ u_{10}^{'} $     & $ m/s $    & 选取：$ 8 \sim 12 m/s $                              & 10                \\ \hline
             3    & 主管道计算内径 & $ d_{1i}^{'} $     & $ m $      & $ \sqrt{4 G_{1} \bar{v}_{1} / \pi u_{10}^{\prime}} $ & 0.62              \\ \hline
             4    & 主管道设计内径 & $ d_{1i} $         & $ m $      & 选取                                                 & 0.62              \\ \hline
