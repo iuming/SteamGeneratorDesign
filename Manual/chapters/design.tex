@@ -145,11 +145,11 @@
 \end{enumerate}
 
 \subsubsection{二回路侧循环倍率的计算}
-在设计中，常用图解法来确定循环倍率$ C_R $值和循环速度$ u_o $值。即先假定几个不同的循环倍率$ C_{R1} $、$ C_{R2} $、$ C_{R3} \cdots$值。分别计算其运动压头$ P_{m} $和总阻力$ \Delta P $，在直角坐标系里做出相应的曲线，二根曲线的交点即为稳定工况时的$ C_{R} $值，同时也可求出$ u_{o} $值。
+在设计中，常用二分法来确定循环倍率$ C_R $值和循环速度$ u_o $值。即先假定几个不同的循环倍率$ C_{R1} $、$ C_{R2} $、$ C_{R3} \cdots$值。分别计算其运动压头$ P_{m} $和总阻力$ \Delta P $，通过二分法直到误差在一定范围内，即为稳定工况时的$ C_{R} $值，同时也可求出$ u_{o} $值。
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{用图解法计算循环倍率的曲线.png}
-    \caption{用图解法计算循环倍率的曲线}
+    \includegraphics[width=0.7\textwidth]{用二分法计算循环倍率的程序框图.png}
+    \caption{用二分法计算循环倍率的程序框图}
     \label{Fig.2}
 \end{figure}
 \begin{enumerate}
